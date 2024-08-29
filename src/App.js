@@ -10,18 +10,20 @@ function App() {
     <div className='App'> 
       <BrowserRouter>
       <header className='App-header'> 
-      <h1>MeowCafe</h1>
+      <h1 className='Logo'>MeowCafe</h1>
       <nav>
         <ul className='Nav-list'>  
-          <li><Link className='Link-nav' to="/contact">To Contact</Link></li>
-          <li><Link  className='Link-nav' to="/">To Home</Link></li>
+          <li><Link className='Link-nav' to="/contact">Contact</Link></li>
+          <li><Link  className='Link-nav' to="/">Home</Link></li>
         </ul>
       </nav> 
       </header>
+      <div className='Content-app'>
         <Routes>
           <Route path="/" element={<Home />}>Home</Route>
           <Route path="/contact" element = {<Contact />}>Contato</Route>
         </Routes>
+      </div>
         
       </BrowserRouter>
     </div>

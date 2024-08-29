@@ -1,8 +1,14 @@
 import React from "react";
+import './Home.css';
 
+import Product from './Products'
 const Home = () =>{
     return(
-        <h1>HOME</h1>
+    <div className="Content-home">
+        <Product />
+      
+
+    </div>
     )
 }
 
